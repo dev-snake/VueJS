@@ -1,12 +1,11 @@
-<script setup></script>
+<script setup>
+import { ref } from 'vue'
+const text = ref(0)
+</script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-  </header>
-
   <main>
-    <h1>Hello World</h1>
+    <input v-model.number="text" />
   </main>
 </template>
 
